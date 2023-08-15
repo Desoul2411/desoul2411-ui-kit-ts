@@ -1,6 +1,6 @@
 {
   "name": "button",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "React button component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
   "homepage": "",
@@ -36,5 +36,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "44314787ea111dac48b8dab6d33f5251cbc7f834"
+  "gitHead": "adf43753453bbbc22e1e0cc623bca0d5360d36fe"
 }

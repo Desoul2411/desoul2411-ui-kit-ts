@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "version": "1.0.1",
   "description": "Desoul2411 React Components.",
   "workspaces": [
     "packages/*",
