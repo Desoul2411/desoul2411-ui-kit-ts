@@ -9,5 +9,8 @@
     "version": {
       "message": "chore(release): release"
     }
+  },
+  "bootstrap": {
+    "npmClientArgs": ["--no-package-lock"]
   }
 }

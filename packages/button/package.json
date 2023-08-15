@@ -19,7 +19,6 @@
     "LICENSE"
   ],
   "scripts": {
-    "prebuild": "rm -rf dist",
     "build": "rollup -c ../../rollup.config.js",
     "lint": "eslint {src,__tests__}/**/*",
     "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",

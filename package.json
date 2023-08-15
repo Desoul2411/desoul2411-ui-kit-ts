@@ -4,6 +4,7 @@
   "description": "Desoul2411 React Components.",
   "workspaces": [
     "packages/*",
+    "packages/button",
     "docs"
   ],
   "config": {
@@ -57,6 +58,7 @@
     "docs:export": "npm --workspace docs run export"
   },
   "dependencies": {
+    "@lerna/npm-install": "^6.4.1",
     "postcss": "^8.4.21",
     "rollup-plugin-postcss": "^4.0.2"
   }

@@ -53,12 +53,10 @@ export default {
     nodeResolve(nodeOptions),
     postcss({
       modules: true,
-      extract: true,
     }),
     typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    terser(),
   ],
 };
