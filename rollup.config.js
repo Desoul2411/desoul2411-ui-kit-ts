@@ -51,10 +51,11 @@ export default {
   ],
   plugins: [
     nodeResolve(nodeOptions),
-    typescript(typescriptOptions),
     postcss({
-      plugins: [],
+      modules: true,
+      extract: true,
     }),
+    typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),

@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import "./Button.css";
+import styles from "./styles.css";
 
 export interface IButton {
   children: ReactNode;
@@ -8,10 +8,10 @@ export interface IButton {
 }
 
 const Button: FC<IButton> = ({ children, color, big, ...props }) => {
-  const rootClasses = ["button"];
+  const rootClasses = [styles.Button];
 
   if (big) {
-    rootClasses.push("big-btn");
+    rootClasses.push(styles.ButtonBig);
   }
 
   return (

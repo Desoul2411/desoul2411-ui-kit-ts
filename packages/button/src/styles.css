@@ -1,11 +1,11 @@
-.button {
+.Button {
   padding: 12px 4px;
   color: white;
   border: 1px solid rgb(189, 43, 226);
   background-color: transparent;
 }
 
-.big-btn {
+.ButtonBig {
   font-size: 22px;
   padding: 18px 8px;
 }
