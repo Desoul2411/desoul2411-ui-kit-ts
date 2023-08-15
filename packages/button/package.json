@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "@desoul2411-ui-kit-ts/button",
   "version": "1.0.4",
   "description": "React button component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
@@ -36,5 +36,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "adf43753453bbbc22e1e0cc623bca0d5360d36fe"
+  "gitHead": "ec4612f7d22c1607ed8af857d747e9999fe2752b"
 }
