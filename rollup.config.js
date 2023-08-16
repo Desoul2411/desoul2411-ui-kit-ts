@@ -32,7 +32,7 @@ const typescriptOptions = {
   tsconfig: `${PACKAGE_NAME}/tsconfig.json`,
   declaration: true,
   declarationDir: ".",
-  emitDeclarationOnly: true,
+  emitDeclarationOnly: false,
   declarationMap: true,
 };
 

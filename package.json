@@ -5,6 +5,7 @@
   "workspaces": [
     "packages/*",
     "packages/button",
+    "packages/input",
     "docs"
   ],
   "config": {
