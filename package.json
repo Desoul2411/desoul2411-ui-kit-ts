@@ -6,6 +6,8 @@
     "packages/*",
     "packages/button",
     "packages/input",
+    "packages/labeled-input",
+    "packages/utils",
     "docs"
   ],
   "config": {
