@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "npmClient": "npm",
   "command": {
     "publish": {
@@ -11,6 +11,8 @@
     }
   },
   "bootstrap": {
-    "npmClientArgs": ["--no-package-lock"]
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
   }
 }
