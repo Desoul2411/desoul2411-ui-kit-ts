@@ -24,13 +24,7 @@ const LabeledInput: FC<ILabeledInput> = ({
 
   return (
     <label>
-      {label}
       {toUppercase(label)}
-      <input
-        {...props}
-        className={rootClasses.join(" ")}
-        placeholder={placeholder}
-      />
       <Input big={big} placeholder={placeholder} />
     </label>
   );
