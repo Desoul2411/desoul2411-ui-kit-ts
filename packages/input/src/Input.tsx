@@ -11,6 +11,7 @@ const Input: FC<IInput> = ({ big, placeholder, ...props }) => {
 
   if (big) {
     rootClasses.push(styles.BigInput);
+    console.log("test input");
   }
 
   return (

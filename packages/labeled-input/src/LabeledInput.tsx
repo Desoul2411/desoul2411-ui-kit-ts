@@ -20,6 +20,7 @@ const LabeledInput: FC<ILabeledInput> = ({
 
   if (big) {
     rootClasses.push(styles.BigInput);
+    console.log("test labeled input");
   }
 
   return (
