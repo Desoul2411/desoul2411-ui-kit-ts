@@ -1,17 +1,17 @@
 import React, { FC } from "react";
-import styles from "./styles.css";
+import "./styles.css";
 
 export interface IInput {
   big?: boolean;
+  borderColor?: string;
   placeholder?: string;
 }
 
-const Input: FC<IInput> = ({ big, placeholder, ...props }) => {
-  const rootClasses = [styles.Input];
+const Input: FC<IInput> = ({ big, placeholder, borderColor, ...props }) => {
+  const rootClasses = ["Input"];
 
   if (big) {
-    rootClasses.push(styles.BigInput);
-    console.log("test input");
+    rootClasses.push("BigInput");
   }
 
   return (
@@ -19,6 +19,7 @@ const Input: FC<IInput> = ({ big, placeholder, ...props }) => {
       {...props}
       className={rootClasses.join(" ")}
       placeholder={placeholder}
+      style={{ borderColor }}
     />
   );
 };

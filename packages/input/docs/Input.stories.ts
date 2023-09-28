@@ -1,30 +1,30 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Button from "../src/Button";
+import Input from "../src/Input";
 
 const meta = {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/Input",
+  component: Input,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Input>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "Primary Button",
-    color: "red",
+    borderColor: "grey",
+    placeholder: "Enter value",
   },
 };
 
-export const Big: Story = {
+export const BigGreen: Story = {
   args: {
-    children: "Large Button",
+    borderColor: "green",
     big: true,
-    color: "Yellow",
+    placeholder: "Enter value",
   },
 };

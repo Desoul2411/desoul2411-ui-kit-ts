@@ -11,11 +11,8 @@ const config: StorybookConfig = {
     getAbsolutePath("@storybook/addon-actions"),
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
-    //  getAbsolutePath("@storybook/addon-styling"),
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
-    getAbsolutePath("@storybook/addon-styling-webpack"),
-    //"storybook-css-modules",
   ],
 
   framework: {

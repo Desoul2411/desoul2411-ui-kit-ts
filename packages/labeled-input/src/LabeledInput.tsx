@@ -1,34 +1,35 @@
 import React, { FC } from "react";
-//import { toUppercase } from "../../../utils/formatters.utils";
 import { toUppercase } from "@desoul2411/utils";
 import { Input } from "@desoul2411/input";
-import styles from "./styles.css";
+import "./styles.css";
 
 export interface ILabeledInput {
+  borderColor?: string;
   big?: boolean;
+  capitalizedLabel?: boolean;
   placeholder?: string;
   label: string;
 }
 
 const LabeledInput: FC<ILabeledInput> = ({
+  borderColor,
   big,
+  capitalizedLabel,
   placeholder,
   label,
   ...props
-}) => {
-  const rootClasses = [styles.Input];
-
-  if (big) {
-    rootClasses.push(styles.BigInput);
-    console.log("test labeled input");
-  }
-
-  return (
-    <label>
-      {toUppercase(label)}
-      <Input big={big} placeholder={placeholder} />
+}) => (
+  <>
+    <label className="Label">
+      {capitalizedLabel ? toUppercase(label) : label}
     </label>
-  );
-};
+    <Input
+      big={big}
+      borderColor={borderColor}
+      placeholder={placeholder}
+      {...props}
+    />
+  </>
+);
 
 export default LabeledInput;
