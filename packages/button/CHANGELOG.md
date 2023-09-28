@@ -3,13 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.0.11](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.10...v1.0.11) (2023-08-30)
+## [1.0.15](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.14...v1.0.15) (2023-09-28)
 
 **Note:** Version bump only for package @desoul2411/button
 
+## [1.0.11](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.10...v1.0.11) (2023-08-30)
 
-
-
+**Note:** Version bump only for package @desoul2411/button
 
 ## [1.0.9](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.8...v1.0.9) (2023-08-15)
 
