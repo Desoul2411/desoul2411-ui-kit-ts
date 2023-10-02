@@ -3,11 +3,18 @@ import "./styles.css";
 
 export interface IButton {
   children: ReactNode;
-  color: string;
+  color?: string;
+  borderColor?: string;
   big?: boolean;
 }
 
-const Button: FC<IButton> = ({ children, color, big, ...props }) => {
+const Button: FC<IButton> = ({
+  children,
+  color,
+  borderColor,
+  big,
+  ...props
+}) => {
   const rootClasses = ["Button"];
 
   if (big) {
@@ -15,7 +22,11 @@ const Button: FC<IButton> = ({ children, color, big, ...props }) => {
   }
 
   return (
-    <button {...props} className={rootClasses.join(" ")} style={{ color }}>
+    <button
+      {...props}
+      className={rootClasses.join(" ")}
+      style={{ color, borderColor }}
+    >
       {children}
     </button>
   );

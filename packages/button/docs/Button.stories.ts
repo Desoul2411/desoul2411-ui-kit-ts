@@ -16,15 +16,27 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "Primary Button",
-    color: "red",
+    children: "Primary button",
   },
 };
 
 export const Big: Story = {
   args: {
-    children: "Large Button",
+    children: "Big button",
     big: true,
-    color: "Yellow",
+  },
+};
+
+export const WithGreenFontColor: Story = {
+  args: {
+    children: "Green font color button",
+    color: "green",
+  },
+};
+
+export const WithRedBorder: Story = {
+  args: {
+    children: "Red border button",
+    borderColor: "red",
   },
 };
