@@ -8,7 +8,6 @@ export interface IButton {
 }
 
 const Button: FC<IButton> = ({ children, color, big, ...props }) => {
-  console.log("test log");
   const rootClasses = ["Button"];
 
   if (big) {
