@@ -35,8 +35,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build packages
         run: npm run build
+
+      - name: Build & deploy storybook to github pages
+        run: npm run deploy-storybook
 
       - name: Publish
         run: npx lerna publish --yes

@@ -76,7 +76,8 @@
     "docs:lint": "npm --workspace docs run lint",
     "docs:export": "npm --workspace docs run export",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static"
   },
   "dependencies": {
     "@lerna/npm-install": "^6.4.1",
