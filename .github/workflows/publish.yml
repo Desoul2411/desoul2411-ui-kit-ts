@@ -39,4 +39,4 @@ jobs:
         run: npm run build
 
       - name: Publish
-        run: npx lerna publish --no-verify-access --yes #--no-verify-access flag is needed if NPM_TOKEN is an Automation Token
+        run: npx lerna publish --yes
