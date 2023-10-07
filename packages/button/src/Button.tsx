@@ -16,7 +16,6 @@ const Button: FC<IButton> = ({
   ...props
 }) => {
   console.log("log 1");
-  console.log("log 2");
 
   const rootClasses = ["Button"];
 
