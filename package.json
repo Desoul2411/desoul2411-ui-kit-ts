@@ -4,6 +4,11 @@
   "description": "Desoul2411 React Components.",
   "workspaces": [
     "packages/*",
+    "packages/button",
+    "packages/input",
+    "packages/labeled-input",
+    "packages/utils",
+    "packages/icon",
     "docs"
   ],
   "config": {
