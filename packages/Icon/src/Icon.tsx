@@ -11,6 +11,9 @@ const Icon: FC<IIcon> = ({ path, size, color }) => {
   size = size || 24;
   color = color || "black";
 
+  console.log("log 1");
+  console.log("log 2");
+
   return (
     //@ts-ignore
     <InlineSVG
