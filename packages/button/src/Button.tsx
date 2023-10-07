@@ -16,7 +16,7 @@ const Button: FC<IButton> = ({
   ...props
 }) => {
   const rootClasses = ["Button"];
-  console.log("test log");
+
   if (big) {
     rootClasses.push("ButtonBig");
   }
