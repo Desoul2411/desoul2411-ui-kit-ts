@@ -42,4 +42,4 @@ jobs:
         run: git reset --hard
 
       - name: Publish
-        run: npx lerna publish from-package --yes --no-git-reset --conventional-commits
+        run: npx lerna publish from-git --yes --conventional-commits
