@@ -10,7 +10,6 @@ export interface IIcon {
 const Icon: FC<IIcon> = ({ path, size, color }) => {
   size = size || 24;
   color = color || "black";
-  console.log("test log");
 
   return (
     //@ts-ignore
