@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "Desoul2411 React Components.",
   "workspaces": [
-    "packages/*",
     "packages/button",
     "packages/input",
     "packages/labeled-input",
