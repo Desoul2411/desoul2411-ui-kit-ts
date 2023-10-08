@@ -1,5 +1,5 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src", "docs/Button.stories.ts"],
+  "include": ["src", "../docs/Button.stories.ts"],
   "exclude": ["__tests__", "node_modules", "dist"]
 }
