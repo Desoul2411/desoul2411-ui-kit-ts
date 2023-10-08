@@ -45,10 +45,12 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
+      plugins: [css()],
     },
     {
       file: pkg.module,
       format: "es",
+      plugins: [css()],
     },
   ],
   plugins: [
