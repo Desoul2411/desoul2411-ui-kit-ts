@@ -75,7 +75,6 @@
     "@lerna/npm-install": "^6.4.1",
     "postcss": "^8.4.21",
     "react-inlinesvg": "^4.0.5",
-    "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-import-css": "^3.3.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2"
