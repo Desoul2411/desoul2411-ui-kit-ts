@@ -53,13 +53,13 @@ export default {
   ],
   plugins: [
     nodeResolve(nodeOptions),
+    typescript(typescriptOptions),
     postcss({
       extract: "styles.css",
     }),
-    typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    terser(),
+    /*  terser(), */
   ],
 };
