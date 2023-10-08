@@ -10,6 +10,8 @@ export interface IInput {
 const Input: FC<IInput> = ({ big, placeholder, borderColor, ...props }) => {
   const rootClasses = ["Input"];
 
+  console.log("add");
+
   if (big) {
     rootClasses.push("BigInput");
   }

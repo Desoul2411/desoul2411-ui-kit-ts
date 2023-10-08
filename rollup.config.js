@@ -53,9 +53,13 @@ export default {
     },
   ],
   plugins: [
-    typescript(typescriptOptions),
-    styles(),
     nodeResolve(nodeOptions),
+    typescript(typescriptOptions),
+    postcss({
+      extensions: [".css"],
+      inject: false,
+      extract: "styles.css",
+    }),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
