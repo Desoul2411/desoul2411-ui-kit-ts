@@ -58,5 +58,6 @@ export default {
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
+    terser(),
   ],
 };
