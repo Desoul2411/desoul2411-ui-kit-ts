@@ -17,7 +17,7 @@ const commonjsOptions = {
   ignoreGlobal: true,
   include: /node_modules/,
 };
-const extensions = [".js", ".ts", ".tsx"];
+const extensions = [".js", ".ts", ".tsx", ".css"];
 
 const babelOptions = {
   exclude: /node_modules/,
@@ -55,8 +55,9 @@ export default {
     nodeResolve(nodeOptions),
     typescript(typescriptOptions),
     postcss({
-      extract: "styles.css",
+      extensions: [".css"],
     }),
+    nodeResolve(nodeOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
