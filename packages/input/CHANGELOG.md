@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.41 (2023-10-08)
+
+## 1.0.40 (2023-10-08)
+
+## 1.0.39 (2023-10-08)
+
+## 1.0.38 (2023-10-08)
+
+## 1.0.37 (2023-10-08)
+
+## 1.0.35 (2023-10-08)
+
+## 1.0.34 (2023-10-08)
+
+## 1.0.33 (2023-10-08)
+
+## 1.0.32 (2023-10-08)
+
+## 1.0.31 (2023-10-08)
+
+## 1.0.21 (2023-10-07)
+
+## 1.0.20 (2023-10-07)
+
+## 1.0.18 (2023-10-07)
+
+## 1.0.15 (2023-09-28)
+
+## 1.0.14 (2023-08-30)
+
+## 1.0.11 (2023-08-30)
+
+## 1.0.10 (2023-08-29)
+
+**Note:** Version bump only for package @desoul2411/input
+
 ## [1.0.40](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.39...v1.0.40) (2023-10-08)
 
 **Note:** Version bump only for package @desoul2411/input
