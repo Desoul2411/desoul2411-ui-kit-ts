@@ -1,9 +1,9 @@
 import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-from-bundle";
 import postcss from "rollup-plugin-postcss";
-import styles from "rollup-plugin-styles";
+//import styles from "rollup-plugin-styles";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
-import terser from "@rollup/plugin-terser";
+//import terser from "@rollup/plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import * as fs from "fs";
@@ -57,8 +57,9 @@ export default {
     typescript(typescriptOptions),
     postcss({
       extensions: [".css"],
-      inject: false,
-      extract: "styles.css",
+      inject: true,
+      /*    exec: true,
+      extract: true */
     }),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
