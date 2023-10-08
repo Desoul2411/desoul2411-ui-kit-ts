@@ -1,6 +1,5 @@
 import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-from-bundle";
 import postcss from "rollup-plugin-postcss";
-//import styles from "rollup-plugin-styles";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 //import terser from "@rollup/plugin-terser";
@@ -18,7 +17,7 @@ const commonjsOptions = {
   ignoreGlobal: true,
   include: /node_modules/,
 };
-const extensions = [".js", ".ts", ".tsx", ".css"];
+const extensions = [".js", ".ts", ".tsx"];
 
 const babelOptions = {
   exclude: /node_modules/,
@@ -44,26 +43,20 @@ export default {
     {
       file: pkg.main,
       format: "cjs",
-      sourcemap: true,
     },
     {
       file: pkg.module,
       format: "es",
-      sourcemap: true,
     },
   ],
   plugins: [
     nodeResolve(nodeOptions),
-    typescript(typescriptOptions),
     postcss({
-      extensions: [".css"],
-      inject: true,
-      /*    exec: true,
-      extract: true */
+      modules: true,
     }),
+    typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    /*  terser(), */
   ],
 };
