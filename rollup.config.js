@@ -52,7 +52,8 @@ export default {
   plugins: [
     nodeResolve(nodeOptions),
     postcss({
-      modules: true,
+      modules: false,
+      extract: (output) => output.replace(/\.js$/, ".css"),
     }),
     typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
