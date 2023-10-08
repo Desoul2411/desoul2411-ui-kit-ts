@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.39](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.38...v1.0.39) (2023-10-08)
+
+**Note:** Version bump only for package @desoul2411/button
+
 ## [1.0.30](https://github.com/Desoul2411/desoul2411-ui-kit-ts/compare/v1.0.29...v1.0.30) (2023-10-08)
 
 **Note:** Version bump only for package @desoul2411/button
