@@ -1,6 +1,6 @@
 {
   "name": "@desoul2411/labeled-input",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "React input component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
   "homepage": "",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@desoul2411/input": "^1.0.40",
-    "@desoul2411/utils": "^1.0.41"
+    "@desoul2411/utils": "^1.0.42"
   },
   "devDependencies": {
     "react": "^18.2.0",
