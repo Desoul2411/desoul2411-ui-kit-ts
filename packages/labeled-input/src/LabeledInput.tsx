@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { toUppercase } from "@desoul2411/utils";
 import { Input } from "@desoul2411/input";
-import "./styles.css";
+import styles from "./styles.css";
 
 export interface ILabeledInput {
   borderColor?: string;
@@ -20,7 +20,7 @@ const LabeledInput: FC<ILabeledInput> = ({
   ...props
 }) => (
   <>
-    <label className="Label">
+    <label className={styles.Label}>
       {capitalizedLabel ? toUppercase(label) : label}
     </label>
     <Input

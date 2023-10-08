@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import "./styles.css";
+import styles from "./styles.css";
 
 export interface IInput {
   big?: boolean;
@@ -8,12 +8,12 @@ export interface IInput {
 }
 
 const Input: FC<IInput> = ({ big, placeholder, borderColor, ...props }) => {
-  const rootClasses = ["Input"];
+  const rootClasses = [styles.Input];
 
   console.log("add");
 
   if (big) {
-    rootClasses.push("BigInput");
+    rootClasses.push(styles.BigInput);
   }
 
   return (
