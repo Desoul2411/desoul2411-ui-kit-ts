@@ -1,5 +1,6 @@
 import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-from-bundle";
 import postcss from "rollup-plugin-postcss";
+import styles from "rollup-plugin-styles";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
@@ -52,11 +53,8 @@ export default {
     },
   ],
   plugins: [
-    nodeResolve(nodeOptions),
     typescript(typescriptOptions),
-    postcss({
-      extensions: [".css"],
-    }),
+    styles(),
     nodeResolve(nodeOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
