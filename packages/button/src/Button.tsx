@@ -3,7 +3,9 @@ import "./styles.css";
 
 export interface IButton {
   children: ReactNode;
+  onClick: () => void;
   color?: string;
+  backgroundColor?: string;
   borderColor?: string;
   big?: boolean;
 }
@@ -11,8 +13,10 @@ export interface IButton {
 const Button: FC<IButton> = ({
   children,
   color,
+  backgroundColor,
   borderColor,
   big,
+  onClick,
   ...props
 }) => {
   console.log("log 1");
@@ -27,7 +31,8 @@ const Button: FC<IButton> = ({
     <button
       {...props}
       className={rootClasses.join(" ")}
-      style={{ color, borderColor }}
+      style={{ color, borderColor, backgroundColor }}
+      onClick={onClick}
     >
       {children}
     </button>
