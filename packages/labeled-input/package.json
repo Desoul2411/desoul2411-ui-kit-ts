@@ -1,6 +1,6 @@
 {
   "name": "@desoul2411/labeled-input",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "React input component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
   "homepage": "",
@@ -25,7 +25,7 @@
     "test": "jest -c ../../jest.config.js"
   },
   "dependencies": {
-    "@desoul2411/input": "^1.0.38",
+    "@desoul2411/input": "^1.0.39",
     "@desoul2411/utils": "^1.0.12"
   },
   "devDependencies": {
