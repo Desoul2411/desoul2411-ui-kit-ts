@@ -8,7 +8,7 @@ export interface IIcon {
 }
 
 const Icon: FC<IIcon> = ({ path, size, color }) => {
-  size = size || 24;
+  size = size || 26;
   color = color || "black";
 
   return (

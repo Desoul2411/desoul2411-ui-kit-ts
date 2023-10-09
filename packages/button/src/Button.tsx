@@ -19,8 +19,6 @@ const Button: FC<IButton> = ({
   onClick,
   ...props
 }) => {
-  console.log("log 1");
-
   const rootClasses = [styles.Button];
 
   if (big) {
