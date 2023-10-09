@@ -2,19 +2,19 @@ import React, { FC } from "react";
 import InlineSVG from "react-inlinesvg";
 
 export interface IIcon {
-  path: any;
+  src: any;
   size?: number;
   color?: string;
 }
 
-const Icon: FC<IIcon> = ({ path, size, color }) => {
+const Icon: FC<IIcon> = ({ src, size, color }) => {
   size = size || 26;
   color = color || "black";
 
   return (
     //@ts-ignore
     <InlineSVG
-      src={path}
+      src={src}
       preProcessor={(code) =>
         code
           .replace(/fill=".?"/g, `fill="${color}"`)

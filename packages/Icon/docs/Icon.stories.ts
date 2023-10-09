@@ -16,20 +16,20 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    path: settings,
+    src: settings,
   },
 };
 
 export const BlueIcon: Story = {
   args: {
-    path: settings,
+    src: settings,
     color: "blue",
   },
 };
 
 export const BigGreenIcon: Story = {
   args: {
-    path: settings,
+    src: settings,
     size: 35,
     color: "green",
   },
