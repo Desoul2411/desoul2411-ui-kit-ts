@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export interface IInput {
   big?: boolean;
