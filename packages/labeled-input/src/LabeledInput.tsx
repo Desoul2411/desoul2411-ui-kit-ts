@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { toUppercase } from "@desoul2411/utils";
 import { Input } from "@desoul2411/input";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 export interface ILabeledInput {
   borderColor?: string;
