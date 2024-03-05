@@ -5,6 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
+import svgr from '@svgr/rollup';
 import * as fs from "fs";
 import path from "path";
 
@@ -60,6 +61,7 @@ export default {
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
+    svgr(),
     terser()
   ],
 };
