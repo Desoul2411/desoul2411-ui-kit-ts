@@ -73,11 +73,13 @@
   },
   "dependencies": {
     "@lerna/npm-install": "^6.4.1",
+    "@rollup/plugin-url": "^8.0.2",
     "postcss": "^8.4.21",
     "react-inlinesvg": "^4.0.5",
     "rollup-plugin-import-css": "^3.3.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-styles": "^4.0.0"
   }
 }

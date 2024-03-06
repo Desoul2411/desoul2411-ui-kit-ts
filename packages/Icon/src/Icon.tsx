@@ -20,12 +20,12 @@ const Icon: FC<IIcon> = ({ name, size, color }) => {
   size = size || 26;
   color = color || "black";
 
-  const icon:  React.FC<SVGProps<SVGElement>>  = icons[name];
+  const icon: React.FC<SVGProps<SVGElement>>  = icons[name];
 
   return (
     //@ts-ignore
     <InlineSVG
-    src={icon as unknown as string}
+      src={icon as unknown as string}
       style={{ width: size, height: size, color }}
     />
   );

@@ -5,9 +5,11 @@ import typescript from "@rollup/plugin-typescript";
 /* import terser from "@rollup/plugin-terser"; */
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
+import url from '@rollup/plugin-url';
 import svgr from '@svgr/rollup';
 import * as fs from "fs";
 import path from "path";
+import sourcemaps from 'rollup-plugin-sourcemaps';
 
 const PACKAGE_NAME = process.cwd();
 const pkg = JSON.parse(
@@ -57,11 +59,13 @@ export default {
     postcss({
       modules: true,
     }),
+    sourcemaps(),
     typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
-    svgr(),
     babel(babelOptions),
     commonjs(commonjsOptions),
+    url(),
+    svgr(),
     /* terser() */
   ],
 };
