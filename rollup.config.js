@@ -57,11 +57,11 @@ export default {
     postcss({
       modules: true,
     }),
+    svgr({ typescript :true }),
     typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    svgr(),
     terser()
   ],
 };
