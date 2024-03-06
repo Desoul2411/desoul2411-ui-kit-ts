@@ -2,7 +2,7 @@ import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-fr
 import postcss from "rollup-plugin-postcss";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
-import terser from "@rollup/plugin-terser";
+/* import terser from "@rollup/plugin-terser"; */
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import svgr from '@svgr/rollup';
@@ -57,11 +57,11 @@ export default {
     postcss({
       modules: true,
     }),
-    svgr({ typescript :true }),
     typescript(typescriptOptions),
     excludeDependenciesFromBundle({ peerDependencies: true }),
+    svgr(),
     babel(babelOptions),
     commonjs(commonjsOptions),
-    terser()
+    /* terser() */
   ],
 };
