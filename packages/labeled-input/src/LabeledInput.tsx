@@ -19,7 +19,7 @@ const LabeledInput: FC<ILabeledInput> = ({
   label,
   ...props
 }) => (
-  <>
+  <div className={styles.LabelWrapper}>
     <label className={styles.Label}>
       {capitalizedLabel ? toUppercase(label) : label}
     </label>
@@ -29,7 +29,7 @@ const LabeledInput: FC<ILabeledInput> = ({
       placeholder={placeholder}
       {...props}
     />
-  </>
+  </div>
 );
 
 export default LabeledInput;

@@ -1,3 +1,9 @@
 .Label {
   margin-right: 10px;
 }
+
+.LabelWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
