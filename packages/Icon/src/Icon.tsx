@@ -1,40 +1,22 @@
 import React, { FC } from "react";
-/* import InlineSVG from "react-inlinesvg"; */
-import { HandySvg } from 'handy-svg';
-import settingsIcon from "./icons/icon-settings.svg";
-import alertIcon from './icons/icon-alert.svg';
-import menuIcon from './icons/icon-menu.svg';
-
-const icons = {
-  settings: settingsIcon,
-  alert: alertIcon,
-  menu: menuIcon,
-};
-
-type Icon = "settings" | "menu" | "alert";
+import InlineSVG from "react-inlinesvg";
 
 export interface IIcon {
-  name: Icon;
+  src: any;
   size?: number;
   color?: string;
 }
 
-const Icon: FC<IIcon> = ({ name, size, color }) => {
+const Icon: FC<IIcon> = ({ src, size, color }) => {
   size = size || 26;
   color = color || "black";
 
-  const icon = icons[name];
-
   return (
-  <HandySvg
-    // @ts-ignore
-    src={icon}
-    className="icon"
-    width="32"
-    height="32"
-    // @ts-ignore
-    style={{ width: size, height: size, color }}
-/>
+    //@ts-ignore
+    <InlineSVG
+      src={src}
+      style={{ width: size, height: size, fill: color }}
+    />
   );
 };
 

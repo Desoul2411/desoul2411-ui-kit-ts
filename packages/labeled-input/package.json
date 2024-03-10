@@ -1,7 +1,7 @@
 {
-  "name": "@desoul2411/icon",
-  "version": "1.0.37",
-  "description": "React icon component",
+  "name": "@desoul2411/labeled-input",
+  "version": "1.0.47",
+  "description": "React input component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
   "homepage": "",
   "sideEffects": false,
@@ -24,14 +24,17 @@
     "prettier": "prettier --write \"./(src|__tests__)/**/*.(ts|tsx)\"",
     "test": "jest -c ../../jest.config.js"
   },
+  "dependencies": {
+    "@desoul2411/input": "^1.0.43",
+    "@desoul2411/utils": "^1.0.46"
+  },
   "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "react-inlinesvg": "^4.0.5"
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "publishConfig": {
     "access": "public"
