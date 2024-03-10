@@ -14,22 +14,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const SettingsIcon: Story = {
   args: {
-    src: settings,
+    icon: 'settings',
   },
 };
 
-export const BlueIcon: Story = {
+export const BlueAlertIcon: Story = {
   args: {
-    src: settings,
+    icon: 'alert',
     color: "blue",
   },
 };
 
-export const BigGreenIcon: Story = {
+export const BigGreenMenuIcon: Story = {
   args: {
-    src: settings,
+    icon: 'menu',
     size: 35,
     color: "green",
   },
