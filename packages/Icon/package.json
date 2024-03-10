@@ -1,6 +1,6 @@
 {
   "name": "@desoul2411/icon",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "React icon component",
   "author": "Slava Shevchuk <desoul2411@gmail.com>",
   "homepage": "",
@@ -29,10 +29,10 @@
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
+    "handy-svg": "^1.0.8",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
-    "react-inlinesvg": "^4.0.5",
-    "handy-svg": "^1.0.8"
+    "react-inlinesvg": "^4.0.5"
   },
   "publishConfig": {
     "access": "public"
