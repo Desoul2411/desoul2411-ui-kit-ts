@@ -20,15 +20,15 @@ export interface IIcon {
 }
 
 const Icon: FC<IIcon> = ({ icon, size, color }) => {
-  size = size || 26;
+  size = size || 24;
   color = color || "black";
 
+  const SvgIcon = icons[icon];
+
   return (
-    <>
-      {createElement(icons[icon], {
-            style: { width: size, height: size, fill: color },
-      })}
-    </>
+    <SvgIcon
+      style={{ fill: color, color, width: size, height: size }}
+    />
   );
 };
 

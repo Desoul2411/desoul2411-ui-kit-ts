@@ -32,18 +32,31 @@ const config: StorybookConfig = {
                 },
               }
             ],
-          }
+          },
         ]
-      }
-    }
+      },
+    },
   ],
 
   framework: {
     name: getAbsolutePath("@storybook/react-webpack5"),
     options: {},
   },
+  webpackFinal: async (config) => {
+    config?.module?.rules?.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+      type: "javascript/auto",
+      issuer: {
+      and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
+      },
+    });
+
+    return config;
+  },
   docs: {
     autodocs: "tag",
   },
+
 };
 export default config;
